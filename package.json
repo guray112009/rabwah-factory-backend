@@ -1,0 +1,48 @@
+{
+  "name": "rabwah-factory-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Rabwah Factory — includes authentication, role-based access control, and CRUD for staff, salaries, expenses, and customers.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/seed/seedAdmin.js",
+    "render-postbuild": "echo '✅ Render postbuild complete'"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "mongoose",
+    "jwt",
+    "factory",
+    "backend",
+    "api",
+    "nodejs"
+  ],
+  "author": "Rabwah Factory Development Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-validator": "^7.3.0",
+    "helmet": "^8.1.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.2",
+    "morgan": "^1.10.1",
+    "nodemailer": "^7.0.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
+  "render": {
+    "buildCommand": "npm install",
+    "startCommand": "npm run start"
+  }
+}
